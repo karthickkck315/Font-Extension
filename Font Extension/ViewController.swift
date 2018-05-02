@@ -10,14 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var label: UILabel!
+  
+  @IBOutlet weak var button: UIButton!
+  
+  @IBOutlet weak var textField: UITextField!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //we can set font two differnt types
+    label.font = UIFont.regularFont26
+    label.font = .regularFont26
+    
+    //Bold font
+    button.titleLabel?.font = UIFont.boldFont10
+    
+    //Italic font
+    textField.font = UIFont.ItalicFont20
+    
+    
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
 
